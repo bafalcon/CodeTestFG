@@ -1,0 +1,11 @@
+C:\git\fabricgroup\Codu\Codu.Services\bin\Debug\net5.0\Codu.Services.deps.json
+C:\git\fabricgroup\Codu\Codu.Services\bin\Debug\net5.0\Codu.Services.dll
+C:\git\fabricgroup\Codu\Codu.Services\bin\Debug\net5.0\ref\Codu.Services.dll
+C:\git\fabricgroup\Codu\Codu.Services\bin\Debug\net5.0\Codu.Services.pdb
+C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.AssemblyInfoInputs.cache
+C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.AssemblyInfo.cs
+C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.csproj.CoreCompileInputs.cache
+C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.dll
+C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\ref\Codu.Services.dll
+C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.pdb

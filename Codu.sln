@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codu", "Codu\Codu.csproj", "{3585FE32-1BD6-4890-9CEF-C39739AD9CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codu.Services", "Codu.Services\Codu.Services.csproj", "{FFFBC538-601B-4457-941D-1129DA2FD377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codu.Test", "Codu.Test\Codu.Test.csproj", "{C886F1C4-2271-4669-89CD-84E76355DA33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3585FE32-1BD6-4890-9CEF-C39739AD9CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3585FE32-1BD6-4890-9CEF-C39739AD9CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3585FE32-1BD6-4890-9CEF-C39739AD9CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3585FE32-1BD6-4890-9CEF-C39739AD9CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFFBC538-601B-4457-941D-1129DA2FD377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFFBC538-601B-4457-941D-1129DA2FD377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFFBC538-601B-4457-941D-1129DA2FD377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFFBC538-601B-4457-941D-1129DA2FD377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C886F1C4-2271-4669-89CD-84E76355DA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C886F1C4-2271-4669-89CD-84E76355DA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C886F1C4-2271-4669-89CD-84E76355DA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C886F1C4-2271-4669-89CD-84E76355DA33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DE1F561-3F03-47FE-8FCC-A30687F38544}
+	EndGlobalSection
+EndGlobal
