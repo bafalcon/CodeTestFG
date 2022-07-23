@@ -11,17 +11,7 @@ namespace Codu.Services.Helper
 {
     public class CommandHelper
     {
-        public class Command
-        {
-            public Enums.CommandType Type { get; set; }
-            public string BankName { get; set; }
-            public string BorrowerName { get; set; }
-            public decimal Principle { get; set; }
-            public decimal LoanRate { get; set; }
-            public decimal LoanTermYears { get; set; }
-
-        }
-
+        
         public CommandHelper() { }
 
         public List<string> GetCommandLines(FileStream fileStream)
@@ -48,7 +38,7 @@ namespace Codu.Services.Helper
                 }
 
             }
-            //            catch (Exception ex)// avoid warning
+            //  catch (Exception ex)// avoid warning
             catch
             {
                 // TODO: if we had a dto to pass back a results class

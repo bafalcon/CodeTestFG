@@ -1253,6 +1253,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Codu.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Codu.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Codu.Services.dll": {}
+        }
       }
     }
   },
@@ -4942,10 +4952,16 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Codu.Services/1.0.0": {
+      "type": "project",
+      "path": "../Codu.Services/Codu.Services.csproj",
+      "msbuildProject": "../Codu.Services/Codu.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Codu.Services >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "NUnit >= 3.13.1",
       "NUnit3TestAdapter >= 3.17.0",
@@ -4983,7 +4999,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\git\\fabricgroup\\Codu\\Codu.Services\\Codu.Services.csproj": {
+              "projectPath": "C:\\git\\fabricgroup\\Codu\\Codu.Services\\Codu.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

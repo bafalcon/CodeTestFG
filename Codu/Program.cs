@@ -16,9 +16,10 @@ namespace Codu
             FileService fileService = new FileService();
             CommandHelper commandHelper = new CommandHelper();
             CommandParser commandParser = new CommandParser();
+            LoanHelper loanHelper = new LoanHelper();
             List<Loan> Loans = new List<Loan>();
             List<Payment> Payments = new List<Payment>();
-            CommandExecutor commandExecutor = new CommandExecutor(Loans, Payments);
+            CommandExecutor commandExecutor = new CommandExecutor(Loans, Payments, loanHelper);
             CommandProcessor commandProcessor = new CommandProcessor(commandParser, commandExecutor);
 
             try

@@ -113,3 +113,7 @@ C:\git\fabricgroup\Codu\geektrust\Codu.Test.runtimeconfig.dev.json
 C:\git\fabricgroup\Codu\geektrust\Codu.Test.dll
 C:\git\fabricgroup\Codu\geektrust\ref\Codu.Test.dll
 C:\git\fabricgroup\Codu\geektrust\Codu.Test.pdb
+C:\git\fabricgroup\Codu\Codu.Test\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\git\fabricgroup\Codu\Codu.Test\bin\Debug\net5.0\Codu.Services.dll
+C:\git\fabricgroup\Codu\Codu.Test\bin\Debug\net5.0\Codu.Services.pdb
+C:\git\fabricgroup\Codu\geektrust\CoverletSourceRootsMapping
