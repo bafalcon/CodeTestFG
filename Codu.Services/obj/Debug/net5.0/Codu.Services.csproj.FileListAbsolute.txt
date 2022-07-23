@@ -9,3 +9,8 @@ C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.csproj.Core
 C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.dll
 C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\ref\Codu.Services.dll
 C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.pdb
+C:\git\fabricgroup\Codu\geektrust\Codu.Services.deps.json
+C:\git\fabricgroup\Codu\geektrust\Codu.Services.dll
+C:\git\fabricgroup\Codu\geektrust\ref\Codu.Services.dll
+C:\git\fabricgroup\Codu\geektrust\Codu.Services.pdb
+C:\git\fabricgroup\Codu\Codu.Services\obj\Debug\net5.0\Codu.Services.csproj.AssemblyReference.cache

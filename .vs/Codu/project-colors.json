@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3585fe32-1bd6-4890-9cef-c39739ad9cc0": {
+      "ProjectGuid": "3585fe32-1bd6-4890-9cef-c39739ad9cc0",
+      "DisplayName": "Codu",
+      "ColorIndex": 0
+    },
+    "fffbc538-601b-4457-941d-1129da2fd377": {
+      "ProjectGuid": "fffbc538-601b-4457-941d-1129da2fd377",
+      "DisplayName": "Codu.Services",
+      "ColorIndex": 1
+    },
+    "c886f1c4-2271-4669-89cd-84e76355da33": {
+      "ProjectGuid": "c886f1c4-2271-4669-89cd-84e76355da33",
+      "DisplayName": "Codu.Test",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

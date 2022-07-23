@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Codu.Services.Parser;
 using Codu.Services.Service;
+using Codu.Services.Classes;
 
 namespace Codu.Services.Service
 {
@@ -19,14 +20,13 @@ namespace Codu.Services.Service
             _commandExecutor = commandExecutor;
         }
 
-        public string ProcessCommand(string command)
+        public CommandResult ProcessCommand(string command)
         {
-            string output = string.Empty;
+            CommandResult result = new CommandResult();
 
             try
             {
                 var parsedCommand = _commandParser.Parse(command);
-                CommandExecutor.CommandResult result = new CommandExecutor.CommandResult();
                 switch (parsedCommand.Type)
                 {
                     case Enums.CommandType.Loan:
@@ -39,23 +39,13 @@ namespace Codu.Services.Service
                         result = _commandExecutor.ExecuteBalance(parsedCommand);
                         break;
 
-                }
-
-                // maybe overkill
-                if (result.Status)
-                {
-                    output = result.Message;
-                }
-                else
-                {
-                    output = result.ErrorMessage;
-                }
+                }                
             }
             catch
             {
-                output = "ERROR PROCESSING COMMAND";
+                result.ErrorMessage = "ERROR PROCESSING COMMAND";
             }
-            return output;
+            return result;
         }
     }
 }

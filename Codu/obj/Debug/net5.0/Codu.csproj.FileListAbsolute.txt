@@ -17,3 +17,10 @@ C:\git\fabricgroup\Codu\Codu\obj\Debug\net5.0\Codu.genruntimeconfig.cache
 C:\git\fabricgroup\Codu\Codu\bin\Debug\net5.0\Codu.Services.dll
 C:\git\fabricgroup\Codu\Codu\bin\Debug\net5.0\Codu.Services.pdb
 C:\git\fabricgroup\Codu\Codu\obj\Debug\net5.0\Codu.csproj.CopyComplete
+C:\git\fabricgroup\Codu\geektrust\geektrust.exe
+C:\git\fabricgroup\Codu\geektrust\geektrust.deps.json
+C:\git\fabricgroup\Codu\geektrust\geektrust.runtimeconfig.json
+C:\git\fabricgroup\Codu\geektrust\geektrust.runtimeconfig.dev.json
+C:\git\fabricgroup\Codu\geektrust\geektrust.dll
+C:\git\fabricgroup\Codu\geektrust\ref\geektrust.dll
+C:\git\fabricgroup\Codu\geektrust\geektrust.pdb

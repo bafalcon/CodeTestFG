@@ -99,3 +99,17 @@ C:\git\fabricgroup\Codu\Codu.Test\obj\Debug\net5.0\Codu.Test.dll
 C:\git\fabricgroup\Codu\Codu.Test\obj\Debug\net5.0\ref\Codu.Test.dll
 C:\git\fabricgroup\Codu\Codu.Test\obj\Debug\net5.0\Codu.Test.pdb
 C:\git\fabricgroup\Codu\Codu.Test\obj\Debug\net5.0\Codu.Test.genruntimeconfig.cache
+C:\git\fabricgroup\Codu\geektrust\testhost.dll
+C:\git\fabricgroup\Codu\geektrust\testhost.exe
+C:\git\fabricgroup\Codu\geektrust\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\git\fabricgroup\Codu\geektrust\NUnit3.TestAdapter.dll
+C:\git\fabricgroup\Codu\geektrust\NUnit3.TestAdapter.pdb
+C:\git\fabricgroup\Codu\geektrust\nunit.engine.dll
+C:\git\fabricgroup\Codu\geektrust\nunit.engine.api.dll
+C:\git\fabricgroup\Codu\geektrust\nunit.engine.core.dll
+C:\git\fabricgroup\Codu\geektrust\Codu.Test.deps.json
+C:\git\fabricgroup\Codu\geektrust\Codu.Test.runtimeconfig.json
+C:\git\fabricgroup\Codu\geektrust\Codu.Test.runtimeconfig.dev.json
+C:\git\fabricgroup\Codu\geektrust\Codu.Test.dll
+C:\git\fabricgroup\Codu\geektrust\ref\Codu.Test.dll
+C:\git\fabricgroup\Codu\geektrust\Codu.Test.pdb

@@ -13,18 +13,6 @@ namespace Codu.Services.Service
     public class CommandExecutor
     {
 
-        public class CommandResult
-        {
-            public string Message { get; set; }
-            public string ErrorMessage { get; set; }
-            public bool Status { get; set; }
-
-            public CommandResult()
-            {
-                ErrorMessage = "INVALID COMMAND";
-            }
-        }
-
         private class LoanFacts
         {
             public decimal TotalInterest { get; set; }
@@ -85,7 +73,7 @@ namespace Codu.Services.Service
                 });
 
 
-                // according to the samples, successfuly adding a loan doesnt require any response?
+                // according to the samples,   doesnt require any response?
                 output.Status = true;
             }
             else
@@ -103,22 +91,45 @@ namespace Codu.Services.Service
 
             if (command.isValidBalance())
             {
-                var theLoan = _loans.Where(x => x.BankName == command.BankName && 
+                var theLoan = _loans.Where(x => x.BankName == command.BankName &&
                                     x.BorrowerName == command.BorrowerName).FirstOrDefault();
 
-                if(theLoan!=null)
+                if (theLoan != null)
                 {
                     // get the loan facts
                     var loanFacts = getLoanFacts(theLoan);
 
-                    var activePayments = _payments.Where(x=> x.BankName == command.BankName &&
-                                    x.BorrowerName == command.BorrowerName && !(x.EMI_NO>command.EMI_NO)).ToList();
+                    var totalEMIPaid = loanFacts.MonthlyEMIAmount * command.EMI_NO.Value;
+                    decimal? totalExtraPaid = 0m;
+                    decimal totalPaid = 0m;
+                    decimal remainingEMIs = loanFacts.InitialNumberOfPayments;
 
-                    var totalPaid = loanFacts.MonthlyEMIAmount * command.EMI_NO.Value;
+                    var activePayments = _payments.Where(x => x.BankName == command.BankName &&
+                                    x.BorrowerName == command.BorrowerName && !(x.EMI_NO > command.EMI_NO)).ToList();
+
+                    if(activePayments!=null)
+                    {
+                        totalExtraPaid = activePayments.Sum(x => x.Amount);
+                        if(totalExtraPaid.HasValue)
+                        {
+                            totalPaid = totalEMIPaid + totalExtraPaid.Value;
+
+                            // recalculate EMIs remaining
+                            var loanOutstanding = loanFacts.TotalAmountToRepay - totalPaid;
+                            remainingEMIs = Math.Ceiling(loanOutstanding / loanFacts.MonthlyEMIAmount);
+
+                        }
+                    }
+                    else
+                    {
+                        remainingEMIs = remainingEMIs  - command.EMI_NO.Value;
+                    }
+
+
 
                     // IDIDI Dale 8000 20
-                    output.Message = string.Format("{0} {1} {2} {3}", theLoan.BankName, theLoan.BorrowerName, 
-                            totalPaid.ToString(), (loanFacts.InitialNumberOfPayments - command.EMI_NO).ToString());
+                    output.Message = string.Format("{0} {1} {2} {3}", theLoan.BankName, theLoan.BorrowerName,
+                            totalPaid.ToString("0.##"), remainingEMIs.ToString());
                     output.Status = true;
                 }
                 else
@@ -147,7 +158,7 @@ namespace Codu.Services.Service
 
             loanFacts.TotalInterest = loan.Principle.Value * loan.LoanTermYears.Value * (loan.LoanRate.Value / 100);
             loanFacts.TotalAmountToRepay = loan.Principle.Value + loanFacts.TotalInterest;
-            loanFacts.MonthlyEMIAmount = loanFacts.TotalAmountToRepay / (12 * loan.LoanTermYears.Value);
+            loanFacts.MonthlyEMIAmount = Math.Ceiling(loanFacts.TotalAmountToRepay / (12 * loan.LoanTermYears.Value));
             loanFacts.InitialNumberOfPayments = (12 * loan.LoanTermYears.Value);
 
             return loanFacts;

@@ -24,13 +24,24 @@ namespace Codu
             try
             {
                 var fs = fileService.GetFileStream(args[0]);
-                if(fs!=null)
+                if (fs != null)
                 {
                     var commands = commandHelper.GetCommandLines(fs);
 
-                    foreach(var cmd in commands)
+                    foreach (var cmd in commands)
                     {
-                        Console.WriteLine(commandProcessor.ProcessCommand(cmd));
+                        var result = commandProcessor.ProcessCommand(cmd);
+                        if (result.Status)
+                        {
+                            if (!string.IsNullOrEmpty(result.Message))
+                            {
+                                Console.WriteLine(result.Message);
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine(result.ErrorMessage);
+                        }
                     }
                 }
 

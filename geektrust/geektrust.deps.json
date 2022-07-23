@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "geektrust/1.0.0": {
+        "dependencies": {
+          "Codu.Services": "1.0.0"
+        },
+        "runtime": {
+          "geektrust.dll": {}
+        }
+      },
+      "Codu.Services/1.0.0": {
+        "runtime": {
+          "Codu.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "geektrust/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Codu.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

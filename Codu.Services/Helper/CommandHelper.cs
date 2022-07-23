@@ -21,7 +21,7 @@ namespace Codu.Services.Helper
             public decimal LoanTermYears { get; set; }
 
         }
- 
+
         public CommandHelper() { }
 
         public List<string> GetCommandLines(FileStream fileStream)
@@ -48,7 +48,8 @@ namespace Codu.Services.Helper
                 }
 
             }
-            catch (Exception ex)
+            //            catch (Exception ex)// avoid warning
+            catch
             {
                 // TODO: if we had a dto to pass back a results class
                 throw;
@@ -57,7 +58,7 @@ namespace Codu.Services.Helper
             return output;
         }
 
-         
+
 
     }
 }
